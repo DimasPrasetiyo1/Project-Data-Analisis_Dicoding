@@ -39,7 +39,7 @@ venv\Scripts\activate      # Untuk Windows
 pip install -r requirements.txt
 
 # Jalankan file dashboard.py
-python dashboard/dashboard.py
+streamlit run dashboard.py
 
 # Buka browser Anda dan akses dashboard melalui alamat yang tertera di terminal,
 # biasanya http://127.0.0.1:8050
