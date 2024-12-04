@@ -22,18 +22,25 @@ Proyek ini bertujuan untuk menganalisis data kualitas udara di Beijing (PRSA Dat
 ## Instalasi dan Cara Menjalankan
 1. Clone repository ini ke lokal Anda:
    ```bash
-   git clone <URL_REPOSITORY>
+   git clone <https://github.com/DimasPrasetiyo1/Project-Data-Analisis_Dicoding.git>
    cd PROJECT-DATA-ANALISIS_DICODING
 
 Buat environment virtual (opsional tetapi disarankan):
 
+```bash
+# Membuat environment virtual
 python -m venv venv
+
+# Aktivasi environment virtual
 source venv/bin/activate   # Untuk Linux/Mac
 venv\Scripts\activate      # Untuk Windows
 
-Instal dependensi:
+# Instal dependensi
 pip install -r requirements.txt
 
-Jalankan file dashboard.py:
+# Jalankan file dashboard.py
 python dashboard/dashboard.py
-Buka browser Anda dan akses dashboard melalui alamat yang tertera di terminal, biasanya http://127.0.0.1:8050
+
+# Buka browser Anda dan akses dashboard melalui alamat yang tertera di terminal,
+# biasanya http://127.0.0.1:8050
+
