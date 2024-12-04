@@ -17,7 +17,7 @@ st.set_page_config(
 def load_data():
     try:
         # Ganti 'nama_file.csv' dengan nama file data Anda
-        df = pd.read_excel('C:\Code\Python\data_udara (1).xlsx')
+        df = pd.read_excel('C:\\Code\Project-Data-Analisis_Dicoding\clean_data.xlsx')
         df['date'] = pd.to_datetime(df[['year', 'month', 'day']])
         df['day_of_week'] = df['date'].dt.dayofweek
         df['is_weekend'] = df['day_of_week'].isin([5, 6]).astype(int)

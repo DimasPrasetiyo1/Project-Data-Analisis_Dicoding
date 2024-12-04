@@ -1,22 +1,39 @@
 # Project-Data-Analisis_Dicoding
 
-Setup Lingkungan
-Pasang Visual Studio Code untuk Editor
-Eksekusi perintah berikut di command line (disarankan sebagai administrator):
-pip install pandas numpy matplotlib.pyplotseaborn datetime
+# Project Data Analisis Dicoding
 
-Instalasi Proyek
-Langkah-langkah untuk membuat virtual environment dari proyek ini adalah sebagai berikut:
+## Deskripsi
+Proyek ini bertujuan untuk menganalisis data kualitas udara di Beijing (PRSA Data) dan menampilkan hasilnya melalui dashboard interaktif.
 
-Clone repositori ini
+## Struktur Folder
+- **dashboard/**: Folder yang berisi file Python untuk menjalankan dashboard.
+  - `dashboard.py`: Script utama untuk menjalankan dashboard interaktif.
+- **data/**: Folder yang berisi data mentah dan data yang sudah dibersihkan.
+  - `PRSA_Data_20130301-20170228`: Data mentah dalam format CSV.
+  - `clean_data.xlsx`: Data yang sudah dibersihkan dalam format Excel.
+- `notebook.ipynb`: Notebook Jupyter untuk eksplorasi dan analisis data.
+- `README.md`: File dokumentasi proyek ini.
+- `requirements.txt`: File yang berisi daftar dependensi Python yang diperlukan.
 
-git clone https://github.com/DimasPrasetiyo1/Project-Data-Analisis_Dicoding.git
-Pindah ke direktori Project-Data-Analisis_Dicoding/
-cd dicoding-airquality
+## Persyaratan
+1. Python 3.7 atau versi yang lebih baru.
+2. Semua library yang tercantum di `requirements.txt`.
 
-Jalankan aplikasi Streamlit
-streamlit run dashboard.py
+## Instalasi dan Cara Menjalankan
+1. Clone repository ini ke lokal Anda:
+   ```bash
+   git clone <URL_REPOSITORY>
+   cd PROJECT-DATA-ANALISIS_DICODING
 
-Hentikan program aplikasi dengan menekan ctrl + c.
+Buat environment virtual (opsional tetapi disarankan):
 
-Terima kasih!! 😊
+python -m venv venv
+source venv/bin/activate   # Untuk Linux/Mac
+venv\Scripts\activate      # Untuk Windows
+
+Instal dependensi:
+pip install -r requirements.txt
+
+Jalankan file dashboard.py:
+python dashboard/dashboard.py
+Buka browser Anda dan akses dashboard melalui alamat yang tertera di terminal, biasanya http://127.0.0.1:8050
